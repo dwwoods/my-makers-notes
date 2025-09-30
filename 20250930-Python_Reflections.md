@@ -39,4 +39,18 @@ In a few sentences, explain:
 ### Where to learn about Python's string methods
     Obvs official Python documentation. but its not as neat as functions 
     https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
-    
+
+## Further Strings
+
+In a few sentences, explain:
+
+### What is meant by zero-indexing
+    Zero-indexing means that the position of items in a sequence (like a string) is counted starting from 0, not 1. The first item is at index 0, the second is at index 1, and so on.
+### How to access the first character in a string
+    To access the first character in a string, you use the index 0. 
+### How to access the second character in a string
+    To access the second character, you use the index 1To access the second character, you use the index 1
+### How to access the last character in a string
+    To easily access the last character without knowing the string's length, you use negative indexing with the index -1.
+### How to slice several characters from a string
+    you use the syntax string[start:end]. The slice will include the character at the start index and go up to, but not include, the character at the end index.
