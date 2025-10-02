@@ -7,12 +7,12 @@
     cd on its own takes us to the top level directory i.e. ~ 
     ctr r and you can search venv_ and more ctr r will cycle through older commands
     tab and tab gives a dropdown and you can tab through the options under the -> 
-    man gives you the help files
+    man <command> gives you the help files
     
 
 ### Cursor Movement
 
-Firstly iterm has different movement rules, but you can make it feel like every other app. >iterm>settings>profiles>keys then change left and right ⌘ from normal to Esc+ other wise ⌘ + → changes iterm windows
+** iterm has different movement rules, but you can make it feel like every other app. >iterm>settings>profiles>keys then change left and right ⌘ from normal to Esc+ other wise ⌘ + → changes iterm windows **
 
     Control + A	Beginning of line	Moves the cursor to the very start of the line. Super fast.
 
@@ -23,6 +23,7 @@ Firstly iterm has different movement rules, but you can make it feel like every 
     Option (⌥) + →	Forward one word	Jumps the cursor to the beginning of the next word.
 
 ### Editing & Deleting Text
+
     Control + F	Forward one character	Same as the → arrow key. ("F" for Forward)
 
     Control + B	Back one character	Same as the ← arrow key. ("B" for Backward)
@@ -42,6 +43,7 @@ Firstly iterm has different movement rules, but you can make it feel like every 
     ↑ / ↓ Arrow	Previous/Next Command	The basic way to cycle through your command history.
 
 ### Command History Navigation
+
     Control + R	Reverse Search History	This is a superpower. Press it, then start typing any part of an old command. The most recent match will appear. Press Ctrl+R again to cycle through older matches. Press Enter to run it or an arrow key to edit it.
 
     (type) + ↑ Arrow	Zsh History Search	Type the first few letters of a command (e.g., git) and then press the ↑ arrow. Zsh will only cycle through commands in your history that start with git.
@@ -71,17 +73,25 @@ Firstly iterm has different movement rules, but you can make it feel like every 
 
     *Strings*
     you can just type the name of a string and it will return the string with "your string". alternatively print("string") will give string - i.e. no quotes
-    calling a method doesnt change the original string it just gives you a new output. 
+    calling a method doesn't change the original string it just gives you a new output. 
     same tab command gives you auto complete.
-    >>><string>. + tab and tab again pulls up a list of all the methods!!! <string>.a gives you all the methods starting with a
+    >>><string>. + tab and tab again pulls up a list of all the methods!!! 
+        <string>.a gives you all the methods starting with a
     if you press enter at the wrong time you'll get >>>h.strip(
     ... and all you'll need to do is add the ) after the ... and hit enter.
     you can chain .methods i.e. .strip().upper() gives an uppercase string with no spaces at start and finish. The order may matter depending on what we're doing - order is left to right. 
 
     *Lists*
     Lists (& arrays) start at 0. 
-    l = [1,2,3,4,]
-    sorted(1)
+    l = [1,3,2,4]
+    sorted(1) gives [1, 2, 3, 4] 
+        You called the sorted() function, which created and returned a brand-new list containing the elements of l in sorted order. Your original list l was not affected.
+    l.sort() gives blank
+        In REPL, if a command or function returns None, the interpreter simply prints a blank line. Since l.sort() modifies the list l directly and returns None, nothing is displayed as output from that specific command. However, the list l has been permanently changed.
+    a = l.sort() or print(a) or print(l.sort()) gives None
+        You are assigning the return value of l.sort() to the variable a. Since the sort() method always returns None, the variable a is assigned the value None. This is why printing a shows None. The sorting operation happened to l, not to a.
+    l.sort() followed by print(_) gives [1, 2, 3, 4]  
+        This is the correct way to use l.sort(). You call the method on one line to modify the list. Then, on a separate line, you use the (now sorted) list
 
 ### iPython is better...
     pip install ipython
