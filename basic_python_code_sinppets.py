@@ -77,3 +77,70 @@ def say_hello(person_name):
 
 # Calling a function that prints directly.
 say_hello("Bob") # Output: Hello, Bob!
+
+
+# --- 1. FizzBuzz: The "Specific Before General" Rule ---
+# In an if/elif/else chain, always check the most specific condition
+# first, as the chain stops executing after the first True match.
+def fizz_buzz(number):
+    if number % 15 == 0:
+        return "fizzbuzz"
+    elif number % 3 == 0:
+        return "fizz"
+    elif number % 5 == 0:
+        return "buzz"
+    else:
+        return number
+
+# --- 2. Greeting Reply: Exact vs. Contains ---
+# Use an if/elif/else structure for a series of mutually exclusive checks.
+# Use '==' for an exact match ("is").
+# Use 'in' for a partial match ("contains").
+def reply_to(greeting):
+    if greeting == 'good morning':
+        return 'good morning to you too'
+    elif greeting == 'hello':
+        return 'hi'
+    else:
+        return greeting
+
+# --- 3. Simple Condition: The Ternary Operator ---
+# For a simple if/else that returns a value, a ternary is a compact option.
+# Format: value_if_true if condition else value_if_false
+def deduct_10_if_possible(number):
+    # Standard, clear approach:
+    # if number >= 10:
+    #     return number - 10
+    # else:
+    #     return number
+    
+    # Compact ternary version:
+    return number - 10 if number >= 10 else number
+
+# --- 4. Simple Condition: Using a Built-in Function ---
+# Always look for a built-in function that does the job. It's often
+# more readable and efficient. This logic is just finding the "max" value.
+def top_up_to_100(number):
+    # Standard, clear approach:
+    # if number < 100:
+    #     return 100
+    # else:
+    #     return number
+    
+    # The most Pythonic version using a built-in:
+    return max(100, number)
+
+# pythonic, Extensible Validator
+# Use collections of functions for flexible rule-based systems.
+
+def is_long_enough(password: str) -> bool:
+    return len(password) >= 7
+
+def has_special_character(password: str) -> bool:
+    return any(char in "!@$%" for char in password)
+
+VALIDATORS = [is_long_enough, has_special_character]
+
+def is_valid_password(password: str) -> bool:
+    # `all()` makes this clean and easy to extend via the VALIDATORS list.
+    return all(validator(password) for validator in VALIDATORS)
