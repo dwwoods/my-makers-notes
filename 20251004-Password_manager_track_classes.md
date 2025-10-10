@@ -2,6 +2,8 @@
 
 **HARD**
 ## Reflecting 
+*4 Oct 2025* 
+*updated on 10 Oct 2025 after the Workshop* 
 I dont get this. First I'll try to EIL5
 
 ### Eli5
@@ -13,6 +15,7 @@ I dont get this. First I'll try to EIL5
     `Attributes`: The data or properties that the object has.
 
     `Methods`: The functions or actions that the object can do.
+
 * Reusability and Consistency Once you've defined the blueprint (the class), you can create many individual, unique objects from it. Each object is called an `instance`. Following the car example, you could use your single Car class to create many different car instances:
 
     * `my_car = Car("Red", 120)`
@@ -121,5 +124,5 @@ print(f"I made a {star_cookie.shape} cookie with a {star_cookie.flavor} flavor."
 ## Summary 
 I did not enjoy this. 
 
-In essence. you define the class. decide what happens when you encapsulate with `__init__` this define the attributes (data) and then decide what we can do with to that object with methods.
+In essence. you define the class. decide what happens when you encapsulate with `__init__` this define the attributes (data) and then decide what we can do with to that object with methods i.e. further `def`
 
