@@ -1,6 +1,6 @@
 # TDD Workshop Notes
 
-    Created Date: 2025-10-14
+    Created Date: 14 Oct 2025
 
     Facilitor: Will O'Connell
 
