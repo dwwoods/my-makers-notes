@@ -71,6 +71,14 @@ This exercise is designed to promote group awareness, listening, and non-verbal 
 * If two or more people speak at the same time (interrupting each other), the count must restart from 1.
 * **Process:** The group works together to establish a rhythm and sense each other's timing to successfully reach 20 without anyone speaking over someone else. It requires participants to be highly attuned to the group dynamic.
 
+### The 4 minute talking drill
+
+This is a drill to practice both talking and listening. Makes both sides have awareness of the moment as different people find each more difficult - and theres a second analysis to be done on accepting this discomfort.
+
+* **Objective** Active Listen and speak.
+* **Time limit** 4 mins each
+* **Process. On a given topic, in this example "how have you found the makers course" speak or listen for 4 minutes - then swap round. Accept teh pain and discomfort that comes along. Be willing to experience the positive and negative emotions that come your way - try and keep your mind in the present moment.
+
 ### Active Listening
 
 Active listening is a communication technique that goes beyond simply hearing the words another person is saying. It involves being fully present and concentrating on what is being said, understanding the message, responding thoughtfully, and retaining the information.
@@ -82,3 +90,13 @@ Key steps to practice active listening include:
 * **Provide Feedback (Paraphrase & Clarify):** Periodically summarize what the speaker has said in your own words. This shows you are understanding the message and allows the speaker to clarify any misunderstandings. For example, you could say, "So what I'm hearing is..." or "It sounds like you are feeling..." You should ask open questions.
 * **Defer Judgment:** Avoid interrupting with your own opinions or solutions. Allow the speaker to finish their thoughts completely before you respond. The goal is to understand, not to immediately solve.
 * **Respond Appropriately:** Once the speaker has finished, share your perspective respectfully and honestly. Your response should build on what they have said, demonstrating that you have taken their thoughts and feelings into account.
+
+### Psychological Safety
+
+**Inclusion Safety** Members feel safe to belong to the team. They are comfortable being present, do not feel excluded, and feel like they are wanted and appreciated.
+
+**Learner Safety** Members are able to learn by asking questions. Team members here may be able to experiment, make (and admit) small mistakes, and ask for help.
+
+**Contributor Safety** Members feel safe to contribute their own ideas, without fear of embarrassment or ridicule. This is a more challenging state because volunteering your own ideas can increase the psychosocial vulnerability of team members.
+
+**Challenger** Safety Members can question others’ (including those in authority) ideas or suggest significant changes to ideas, plans, or ways of working.
