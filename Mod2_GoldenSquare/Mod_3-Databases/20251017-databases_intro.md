@@ -61,6 +61,32 @@ Here's how they map to SQL commands:
 
 ## Understanding Table Relationships
 
+The power of a relational database comes from defining relationships between tables. These relationships are built using keys.
+
+### Primary Keys (PK)
+
+A **primary key** is a column (or a set of columns) in a table whose value uniquely identifies each row. Think of it as a record's unique ID number.
+
+*   **Rules for Primary Keys:**
+    *   They must contain **unique** values. No two rows can have the same primary key.
+    *   They **cannot contain `NULL`** values. Every row must have a primary key value.
+*   **Best Practice:** The most common type of primary key is an integer that auto-increments for each new record. In PostgreSQL, this is easily achieved by using the `SERIAL` data type.
+
+    ```sql
+    -- 'id' is the primary key. SERIAL ensures it's a unique, auto-incrementing integer.
+    CREATE TABLE authors (
+      id SERIAL PRIMARY KEY,
+      name text
+    );
+    ```
+
+### Foreign Keys (FK)
+
+A **foreign key** is a column in one table that refers to the primary key of another table. It is the "link" that creates the relationship between the two tables.
+
+*   **Purpose:** A foreign key's job is to ensure *referential integrity*. This means that if a value exists in a foreign key column, the same value must exist in the primary key of the table it points to. You can't have a `book` record that refers to an `author_id` that doesn't exist.
+*   **Example:** To link a `books` table to an `authors` table, the `books` table would have a foreign key column (e.g., `author_id`) that stores the `id` of the author from the `authors` table.
+
 In a relational database, data is organized into tables. The real power comes from linking these tables together through relationships. These relationships model real-world connections and help prevent data duplication.
 
 The key to creating these relationships is the **foreign key**. A foreign key is a column in one table that refers to the primary key of another table, creating a link between them.
@@ -75,6 +101,7 @@ This is the most common relationship type. It means one record in a table can be
   * One author can write **many** books.
   * Each book is written by only **one** author.
 * **Implementation:** The `books` table would contain a foreign key column (e.g., `author_id`) that stores the `id` of the corresponding author from the `authors` table.
+  `author_id` in the `books` table is the **foreign key** that points to the `id` (the **primary key**) in the `authors` table.
 
 ### One-to-One (1:1)
 
