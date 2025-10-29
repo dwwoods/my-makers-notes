@@ -1,6 +1,6 @@
 # Database Workshop: PostgreSQL Fundamentals
 
-*Date: 29 Oct 2025*
+Date: *29 Oct 2025*
 
 This document serves as a consolidated guide for the database workshop, covering PostgreSQL setup, essential SQL concepts, and practical commands for interacting with a relational database.
 
@@ -216,5 +216,3 @@ $ psql -d music_library -f seeds/music_library.sql
 ```
 
 In our test environment, a helper function like `db_connection.seed("seeds/music_library.sql")` automates this process for you before each test run.
-
-```
