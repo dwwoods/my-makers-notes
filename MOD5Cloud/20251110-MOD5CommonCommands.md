@@ -43,13 +43,29 @@ A versatile tool to transfer data from or to a server using various protocols, m
 
 * **Common Use:** Fetch the HTML content of a web page or test an API endpoint.
 
-    ```bash
+```bash
     # Get the full HTML of the example.com homepage
     curl https://example.com
     
     # Only get the HTTP headers (useful for checking status codes)
     curl -I https://example.com
-    ```
+```
+
+## `mkcert`
+
+A simple, zero-config tool for making locally-trusted development certificates. This is essential for running a local development server over HTTPS without getting browser privacy warnings.
+
+* **Common Use:** Create a certificate/key pair for a local domain like `localhost`.
+
+```bash
+    # 1. Install a local Certificate Authority (CA) in your system's trust stores.
+    #    You only need to do this once.
+    mkcert -install
+
+    # 2. Generate a certificate for your local server.
+    #    This creates two files: localhost-key.pem (private key) and localhost.pem (certificate).
+    mkcert localhost
+```
 
 ## `telnet`
 
