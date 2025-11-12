@@ -224,6 +224,14 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 ## Slide 1: The Hook (0:00-0:45)
 
+SSH - Secure Shell a networking protocol by which 2 computers are connected by a secure channel. 
+Luminata / Tina - Ping
+Jay - traceroute 
+Ben - HTTP
+Patrick encryption / https
+Lauren - Telnet
+You may want to have a terminal ready - some audience participation, 
+
 **Opening:**
 "I want to let you in on a secret that marketing departments hate."
 
