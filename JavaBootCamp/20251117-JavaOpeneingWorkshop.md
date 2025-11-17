@@ -6,6 +6,11 @@
 2. **Become Self-Sufficient:** My goal is to be able to write, compile, and run my own simple Java applications without needing step-by-step guidance.
 3. **Learn the Syntax:** I will focus on getting comfortable with the basic building blocks of the language: declaring variables with the correct data types, writing methods, and using control flow statements like `if` and `for`.
 
+## The TOs are for this modlue 
+
+1. **Apply a coherent process to learn a new language.**
+2. **Test-drive simple programming problems using Java.**
+
 ## What is Java?
 
 Today I learned about Java. It's a high-level, **object-oriented**, **statically-typed**, and **compiled** programming language.
