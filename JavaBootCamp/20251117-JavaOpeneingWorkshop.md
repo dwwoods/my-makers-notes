@@ -42,6 +42,36 @@ I need to remember these fundamental ideas about how Java works.
 
 * **Statically Typed:** I learned that Java is "statically typed." This means I must declare the type of every variable I create. For example, I have to tell Java whether a variable will hold a whole number (`int`), a decimal number (`double`), or text (`String`).
 
+* **Encapsulation (and Access Modifiers):** This is another core pillar of OOP. Encapsulation means bundling the data (fields) and the methods that operate on that data together within a single unit (a class). It also involves hiding the internal state of an object from the outside world.
+
+    Think of a car. You, the driver, interact with a simple interface: a steering wheel, pedals, and a gear stick. You don't need to know how the engine, transmission, or electronics work internally. The car's internal complexity is **encapsulated**.
+
+    In Java, we achieve this using **access modifiers** like `public` and `private`.
+
+    *   `private`: When a field or method is `private`, it can only be accessed from *inside* the same class. This is the default choice for an object's data (its fields) to protect it from accidental outside modification.
+
+    *   `public`: When a field or method is `public`, it can be accessed from *anywhere*—from other classes in your project, or even from other programs. This is used for the "public interface" of your class, like the car's steering wheel.
+
+    Here's a simple example of a `User` class that demonstrates encapsulation:
+
+    ```java
+    public class User {
+        private String username; // Private: cannot be accessed directly from outside
+
+        // Public "getter" method to safely expose the username
+        public String getUsername() {
+            return this.username;
+        }
+
+        // Public "setter" method to allow controlled updates
+        public void setUsername(String newUsername) {
+            this.username = newUsername;
+        }
+    }
+    ```
+
+    By making `username` private, we force other parts of the code to use the `getUsername()` and `setUsername()` methods. This gives us control over how the data is read and changed.
+
     ```java
     int myAge = 30; // I must declare this is an integer.
     String myName = "David"; // I must declare this is a String.
