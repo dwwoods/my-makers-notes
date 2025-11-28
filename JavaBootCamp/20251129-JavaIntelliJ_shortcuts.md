@@ -10,27 +10,30 @@ IntelliJ is packed with features to speed up development. Here are some of the m
 
 Live Templates are abbreviations that expand into common code structures. You've already found `sout`, which is a great one!
 
-*   **`sout`**: Prints `System.out.println();`
-    *   Just type `sout` and press `Tab` or `Enter`.
-*   **`psvm`**: Creates the `public static void main(String[] args)` method.
-    *   This is a huge time-saver for creating runnable classes.
-*   **`fori`**: Creates a standard `for` loop.
-    *   Type `fori`, press `Tab`, and it will generate `for (int i = 0; i < |; i++) { ... }`, placing your cursor to set the limit.
-*   **`iter`**: Creates an enhanced `for-each` loop.
-    *   Type `iter`, press `Tab`, and it will generate a loop to iterate over a collection.
+* **`sout`**: Prints `System.out.println();`
+  * Just type `sout` and press `Tab` or `Enter`.
+* **`psvm`**: Creates the `public static void main(String[] args)` method.
+  * This is a huge time-saver for creating runnable classes.
+* **`fori`**: Creates a standard `for` loop.
+  * Type `fori`, press `Tab`, and it will generate `for (int i = 0; i < |; i++) { ... }`, placing your cursor to set the limit.
+* **`iter`**: Creates an enhanced `for-each` loop.
+  * Type `iter`, press `Tab`, and it will generate a loop to iterate over a collection.
+
+*   **`while`**: Creates a `while` loop.
+    *   Type `while`, press `Tab`, and it will generate `while (condition) { ... }`, placing your cursor inside the parentheses to define the condition.
 
 ### Multi-Cursor Editing
 
 Multi-cursor editing is fantastic for making the same change in multiple places at once. Here are a couple of ways to do it:
 
-1.  **Add Cursors with the Mouse:**
-    *   Hold **`Option` + `Shift`** (on macOS) or **`Alt` + `Shift`** (on Windows/Linux) and click at the different locations where you want to add a cursor. You can then type in all places simultaneously.
+1. **Add Cursors with the Mouse:**
+    * Hold **`Option` + `Shift`** (on macOS) or **`Alt` + `Shift`** (on Windows/Linux) and click at the different locations where you want to add a cursor. You can then type in all places simultaneously.
 
-2.  **Select Next Occurrence:**
-    *   Select a piece of text (like a variable name).
-    *   Press **`Ctrl` + `G`** (on macOS) or **`Alt` + `J`** (on Windows/Linux).
-    *   Keep pressing it to select the next matching piece of text. A new cursor will be added at each match, allowing you to edit them all at once.
-    *   To unselect the last match, use `Ctrl` + `Shift` + `G` (macOS) or `Alt` + `Shift` + `J` (Windows/Linux).
+2. **Select Next Occurrence:**
+    * Select a piece of text (like a variable name).
+    * Press **`Ctrl` + `G`** (on macOS) or **`Alt` + `J`** (on Windows/Linux).
+    * Keep pressing it to select the next matching piece of text. A new cursor will be added at each match, allowing you to edit them all at once.
+    * To unselect the last match, use `Ctrl` + `Shift` + `G` (macOS) or `Alt` + `Shift` + `J` (Windows/Linux).
 
 ### Essential Editing Shortcuts
 
